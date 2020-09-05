@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#ECECEC"
+    tools:context=".RequestAppointmentActivity">
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:onClick="setFromDate"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/from_date"
+            android:focusable="false"
+            android:inputType="date"
+            android:hint="@string/appointment_date"/>
+
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:onClick="setFromTime"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/from_time"
+            android:focusable="false"
+            android:singleLine="true"
+            android:inputType="date"
+            android:hint="@string/hh_mm"/>
+
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:onClick="setToTime"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/to_time"
+            android:focusable="false"
+            android:singleLine="true"
+            android:inputType="date"
+            android:hint="@string/hi_mm"/>
+
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/groundsEdittext"
+            android:layout_width="match_parent"
+            android:hint="@string/tell_us_why_you_would_like_to_have_a_meeting"
+            android:minHeight="20dp"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            />
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="submit"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:text="Submit"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

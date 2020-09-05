@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/refreshh"
+        android:icon="@drawable/refresh"
+        app:showAsAction="always"
+        android:title="Refresh" />
+
+
+    <item android:id="@+id/addnotes"
+        android:icon="@drawable/addicon"
+        app:showAsAction="always"
+        android:title="Add New Note" />
+
+</menu>
